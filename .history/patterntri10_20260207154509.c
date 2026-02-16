@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int i, j , n ;
+    printf("\nEnter the value or rows:");
+    scanf("%d", &n);
+    //int a=1;
+    for (i=n;i>=1;i--)
+    {
+        
+        for (j=1; j<=i;j++)
+        {
+            printf("%d",j);
+        }
+        //a++;
+        printf("\n");
+    }
+    return 0;
+}

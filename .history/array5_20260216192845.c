@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int arr[10];
+    int n, choice;
+    printf("\nMenu:");
+    printf("\n1.Creating array \n 2.Display array \n 3.Searching element in array \n 4.Sorting array");
+    print("\nEnter your choice:");
+    scanf("%d", &choice);
+    printf("\nEnter the no of elemnets to put in array:");
+    scanf("%d", &n);
+    printf("\nenter array elemnts:");
+    for (int i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    return 0;
+}

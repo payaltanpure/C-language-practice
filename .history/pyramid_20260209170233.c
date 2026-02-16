@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+    int n=4;
+    
+    return 0;
+}

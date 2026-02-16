@@ -1,0 +1,1 @@
+//enter any 10 nos and count how many nos are divided by 3 and 5 , only by 3 

@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int arr[5];
+    int i, n ;
+    printf("\nEnter the no to be searched:");
+    scaf
+    printf("\nTake user input:");
+    for(i=0;i<10; i++)
+    {
+        scanf("%d", &arr[i]);
+        if(arr[i]==n)
+        {
+          
+        }
+        else{
+            
+        }
+    }
+
+    return 0;
+}
