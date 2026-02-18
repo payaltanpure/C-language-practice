@@ -1,0 +1,126 @@
+#include <stdio.h>
+int main()
+{
+    int arr[10];
+    int n, choice, search, flag=0, temp,ct;
+    int value,loc;
+    menu1:
+    printf("\nMenu:");
+    printf("\n1.Creating array \n 2.Display array \n 3.Searching element in array \n 4.Sorting array\n 5.Insertion in array\n 6.Deletion in array\n7.Exit");
+    printf("\nEnter your choice:");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+        printf("\nEnter the no of elemnets to put in array:");
+        scanf("%d", &n);
+        printf("\nenter array elemnts:");
+        for (int i=0; i<n; i++)
+        {
+            scanf("%d", &arr[i]);
+        }
+        break;
+
+        case 2:
+        printf("\nArray elements are:");
+        for (int i=0; i<n;i++)
+        {
+            printf("%5d", arr[i]);
+        }
+        break;
+
+        case 3:
+        flag=0;
+        printf("\nEnter element to be searched:");
+        scanf("%d",&search);
+        for (int i=0;i<n;i++)
+        {
+            if(arr[i]==search)
+            {
+                flag=1;
+                break;
+            }
+        }
+
+        if(flag)
+        {
+            printf("\nElement found");
+        }
+        else{
+            printf("\nElement not found");
+        }
+        break;
+
+        case 4:
+        for (int i=0;i<n-1;i++)
+        {
+            for (int j=i+1; j<n;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                    temp=arr[i];
+                    arr[i]= arr[j];
+                    arr[j] = temp;
+                }
+            }
+            for(int k=0; k<n;k++)
+            {
+                printf("%5d", arr[k]);
+            }
+            printf("\n");
+        }
+        printf("\nArray elements after sorting:");
+        for (int i=0; i<n;i++)
+        {
+            printf("%5d", arr[i]);
+        }
+        break;
+
+        case 5:
+
+           printf("\nNetr the element and location to insert data in array:");
+           scanf("%d%d", &value , &loc);
+           for(int i=n-1; i>loc-1;i++)
+           {
+              arr[i+1]= arr[i];
+           }
+           arr[loc-1]= value;
+           n++;
+           printf("\n %d elemnt inserted at %d location:",value, loc);
+        break;
+
+        case 6:
+
+           printf("\nEnter the location to delete data in array:");
+           scanf("%d",  &loc);
+           for(int i=loc-1;i<n;i++)
+           {
+            arr[i]= arr
+           }
+        break;
+        case 7:
+           printf("\nThankyou");
+           return 0;
+        break;
+        
+        default:
+           printf("\nInvalid data entered");
+        break;
+        
+
+    }
+    printf("\nPress 1 to continue and 0 to exit");
+    scanf("%d", &ct);
+    if(ct==1)
+    {
+        goto menu1;
+    }
+    else if(ct==0)
+    {
+        printf("\nThankyou");
+        return 0;
+    }
+
+
+    return 0;
+}
