@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int mat1[2][3] , mat2[3][4], mat3[2][4]= {0}; //to avoid garbage value to multiply
+    int i, j, k;
+
+    printf("\nENter mat1 elemnets:");
+    for(i =0; i<2; i++)
+    {
+        for (j=0; j<3; j++)
+        {
+            scanf("%d", )
+        }
+    }
+    return 0;
+}

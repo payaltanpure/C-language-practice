@@ -1,0 +1,15 @@
+#include <stdio.h>
+void adddata(in a ) 
+{
+    int num1, num2 , add;
+    printf("\n Enter any two nos:");
+    scanf("%d%d", &num1, & num2);
+    add= num1+num2;
+    printf("\nAddition is: %d", add);
+}
+int main()
+{
+   adddata(); 
+   return 0;
+}
+

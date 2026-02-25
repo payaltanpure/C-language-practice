@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int arr[3][3];
+    arr[0][0]= 1;
+    arr[0][1]= 2;
+    arr[0][2]= 3;
+    arr[1][0]= 4;
+    arr[0][0]= 1;
+     
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+void adddata()
+{
+    int num1, num2 , add;
+    printf("\n Enter any two nos:");
+    scanf("%d%d", &num1, & num2);
+    add= num1+num2;
+    printf("\nAddition is: %d", add);
+}
+// fun declaration
+int main()
+{
+   adddata(); // fun calling
+   return 0;
+}
+void adddata() // fun defination
